@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Category Filter in JS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    </head>
+    <main>
+    <body>
+      <div>
+	<input type="checkbox" class="checkbox" id="chk" />
+	<label class="label" for="chk">
+		<i class="fas fa-moon"></i>
+		<i class="fas fa-sun"></i>
+		<div class="ball"></div>
+	</label>
+</div>
+
+        <div class = "main-container">
+            <h2>City of <strike>Angels</strike> Sammies</h2>
+            <p>The sandwiches below have done more for me than any SSRI I have ever taken. Enjoy. </p>
+            <div class = "filter-container">
+                <div class = "category-head">
+                    <ul>
+                        <div class = "category-title active" id = "all">
+                            <li>All</li>
+                            <span><i class = "fas fa-border-all"></i></span>
+                        </div>
+                        <div class = "category-title" id = "italy">
+                            <li>Italian Deli</li>
+                            <span><i class="fas fa-italic"></i></span>
+                        </div>
+                        <div class = "category-title" id = "jewish">
+                            <li>Jewish Deli</li>
+                            <span><i class="fas fa-star-of-david"></i></span>
+                        </div>
+                        <div class = "category-title" id = "brekkie">
+                            <li>Breakfast Sandwiches</li>
+                            <span><i class="fas fa-egg"></i></span>
+                        </div>
+                        <div class = "category-title" id = "easta">
+                            <li>East Asian</li>
+                            <span><i class="fas fa-globe-asia"></i></span>
+                        </div>
+
+                        <div class = "category-title" id = "money">
+                            <li>Under $10</li>
+                            <span><i class="fas fa-money-bill-wave"></i></span>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class = "posts-collect">
+                    <div class = "posts-main-container">
+                        <!-- single post -->
+                        <div class = "all jewish">
+                            <div class = "post-img">
+                                <img src = "images/Langers.png" alt = "post">
+                                <span class = "category-name">Jewish Deli</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i></span> <span> Best pastrami sandiwch in LA </span>
+
+                                </div>
+                                <h2>Langer's Delicatessen-Restaurant</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <a href="https://maps.google.com/?saddr=My%20Location&daddr=704%20S%20Alvarado%20St,%20Los%20Angeles,%20CA%2090057">
+                            <button type = "button" class = "read-btn">Directions</button> </a>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all easta">
+                            <div class = "post-img">
+                                <img src = "images/katsu1.png" alt = "post">
+                                <span class = "category-name">East Asian</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "far fa-star"></i></span> <span> Best pastrami sandiwch in LA </span>
+                                </div>
+                                <h2>Katsu Sando</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <a href="https://maps.google.com/?saddr=My%20Location&daddr=736%20N%20Broadway,%20Los%20Angeles,%20CA%2090012">
+                            <button type = "button" class = "read-btn">Directions</button> </a>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all easta">
+                            <div class = "post-img">
+                                <img src = "images/viet1.png" alt = "post">
+                                <span class = "category-name">East Asian</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "far fa-star"></i></span> <span> Best pastrami sandiwch in LA </span>
+                                </div>
+                                <h2>Gamboge</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <a href="https://maps.google.com/?saddr=My%20Location&daddr=1822%20N%20Broadway,%20Los%20Angeles,%20CA%2090031">
+                            <button type = "button" class = "read-btn">Directions</button> </a>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all jewish">
+                            <div class = "post-img">
+                                <img src = "images/Wexlers.png" alt = "post">
+                                <span class = "category-name">Jewish Deli</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "far fa-star"></i></span> <span> Best pastrami sandiwch in LA </span>
+                                </div>
+                                <h2>Wexler's Deli</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <a href="https://www.google.com/maps/search/Wexlers/@34.0343624,-118.5108424,11z/data=!3m1!4b1">
+                            <button type = "button" class = "read-btn">Directions</button> </a>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all jewish">
+                            <div class = "post-img">
+                                <img src = "images/Canters.png" alt = "post">
+                                <span class = "category-name">Jewish Deli</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                  <span><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "far fa-star"></i><i class = "far fa-star"></i></span> <span> Best pastrami sandiwch in LA </span>
+                                </div>
+                                <h2>Canter's Deli</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <a href="https://maps.google.com/?saddr=My%20Location&daddr=419%20N%20Fairfax%20Ave,%20Los%20Angeles,%20CA%2090036">
+                            <button type = "button" class = "read-btn">Directions</button> </a>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all italy money">
+                            <div class = "post-img">
+                                <img src = "images/larchmont.png" alt = "post">
+                                <span class = "category-name">Italian Deli</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i></span> <span> Best pastrami sandiwch in LA </span>
+                                </div>
+                                <h2>Larchmont Village Wine, Spirits & Cheese</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <a href="https://maps.google.com/?saddr=My%20Location&daddr=223%20N%20Larchmont%20Blvd,%20Los%20Angeles,%20CA%2090004">
+                            <button type = "button" class = "read-btn">Directions</button> </a>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all italy money">
+                            <div class = "post-img">
+                                <img src = "images/Marios.png" alt = "post">
+                                <span class = "category-name">Italian Deli</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i></span> <span> Best pastrami sandiwch in LA </span>
+                                </div>
+                                <h2>Mario's Italian Deli & Market sandwiches</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <a href="https://maps.google.com/?saddr=My%20Location&daddr=740%20E%20Broadway,%20Glendale,%20CA%2091205">
+                            <button type = "button" class = "read-btn">Directions</button> </a>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all italy">
+                            <div class = "post-img">
+                                <img src = "images/Baycities.png" alt = "post">
+                                <span class = "category-name">Italian Deli</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i></span> <span> Best pastrami sandiwch in LA </span>
+                                </div>
+                                <h2>Bay Cities</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <a href="https://maps.google.com/?saddr=My%20Location&daddr=1517%20Lincoln%20Blvd,%20Santa%20Monica,%20CA%2090401">
+                            <button type = "button" class = "read-btn">Directions</button> </a>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all italy">
+                            <div class = "post-img">
+                                <img src = "images/Cavarettas.png" alt = "post">
+                                <span class = "category-name">Italian Deli</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i></span> <span> Best pastrami sandiwch in LA </span>
+                                </div>
+                                <h2>Cavaretta’s Italian Deli</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <a href="https://maps.google.com/?saddr=My%20Location&daddr=22045%20Sherman%20Way,%20Canoga%20Park,%20CA%2091304">
+                            <button type = "button" class = "read-btn">Directions</button> </a>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all brekkie">
+                            <div class = "post-img">
+                                <img src = "images/Gjusta.png" alt = "post">
+                                <span class = "category-name">Breakfast</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i></span> <span> Best pastrami sandiwch in LA </span>
+                                </div>
+                                <h2>Gjusta</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <a href="https://maps.google.com/?saddr=My%20Location&daddr=320%20Sunset%20Ave,%20Venice,%20CA%2090291">
+                            <button type = "button" class = "read-btn">Directions</button> </a>
+                        </div>
+                        <!-- end of single post -->
+                        <!-- single post -->
+                        <div class = "all brekkie">
+                            <div class = "post-img">
+                                <img src = "images/Eggslut.png" alt = "post">
+                                <span class = "category-name">Breakfast</span>
+                            </div>
+
+                            <div class = "post-content">
+                                <div class = "post-content-top">
+                                    <span><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i><i class = "fas fa-star"></i></span> <span> Best pastrami sandiwch in LA </span>
+                                </div>
+                                <h2>Eggslut</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!</p>
+                            </div>
+                            <a href="https://www.google.com/maps/search/Eggslut/@34.0650532,-118.5005,11z/data=!3m1!4b1">
+                            <button type = "button" class = "read-btn">Directions</button> </a>
+                        </div>
+                        <!-- end of single post -->
+                    </div>
+        </div>
+</div>
+</div>
+</main>
+        <!-- JS file -->
+        <script src = "script.js"></script>
+        <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+        <script src="./app.js"></script>
+    </body>
+</html>
